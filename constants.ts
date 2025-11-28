@@ -14,7 +14,7 @@ export const SOCIAL_LINKS = {
   location: 'Bangalore, India',
   linkedin: 'https://www.linkedin.com/in/jugal999/', 
   github: 'https://github.com/JugalBoro',
-  resume: 'https://drive.google.com/file/d/1xrPquqnJnhWRtjnsXcQ0zIqxbtE55KZh/view?usp=sharing'
+  resume: 'https://drive.google.com/file/d/1LvJXnA-MpoWr2LsLR5N0BiXSty_MLhFa/view?usp=sharing'
 };
 
 export const SUMMARY = "Agile Full-Stack Developer with 2 years of experience building production-ready, scalable web applications. Skilled in React, Next.js, Node.js, and NestJS, with hands-on experience delivering real-time digital-twin platforms, data-driven dashboards, and high-traffic REST APIs. Proven track record working in fast-paced Agile teams, translating complex business requirements into maintainable, high-performance solutions that improve usability and business outcomes.";
