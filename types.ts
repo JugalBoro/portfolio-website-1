@@ -1,3 +1,4 @@
+
 export interface Project {
   title: string;
   description: string;
@@ -20,11 +21,12 @@ export interface SkillCategory {
 }
 
 export interface BlogPost {
+  id: string;
   title: string;
   excerpt: string;
   date: string;
   readTime: string;
   tags: string[];
   image: string;
-  link: string;
+  content: string; // HTML content
 }

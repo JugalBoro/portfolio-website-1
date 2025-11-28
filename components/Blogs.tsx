@@ -1,9 +1,15 @@
+
 import React from 'react';
 import { BLOGS } from '../constants';
+import { BlogPost } from '../types';
 import { AnimatedSection } from './AnimatedSection';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 
-const Blogs: React.FC = () => {
+interface BlogsProps {
+  onSelectBlog: (blog: BlogPost) => void;
+}
+
+const Blogs: React.FC<BlogsProps> = ({ onSelectBlog }) => {
   return (
     <section id="blogs" className="py-24 bg-tertiary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,16 +23,20 @@ const Blogs: React.FC = () => {
                     Thoughts on development, architecture, and the future of web tech.
                 </p>
             </div>
-            <a href="#" className="hidden md:flex items-center gap-2 text-accent font-medium hover:text-white transition-colors">
-                View all posts <ArrowRight size={16} />
-            </a>
+            {/* Hidden on mobile, visible on desktop */}
+            <div className="hidden md:block text-accent font-medium">
+               Read my latest articles
+            </div>
           </div>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {BLOGS.map((blog, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
-              <a href={blog.link} className="block group h-full">
+              <div 
+                onClick={() => onSelectBlog(blog)}
+                className="block group h-full cursor-pointer"
+              >
                 <div className="bg-secondary rounded-2xl border border-white/5 overflow-hidden h-full flex flex-col hover:border-accent/30 hover:transform hover:-translate-y-1 transition-all duration-300">
                     {/* Image */}
                     <div className="h-48 overflow-hidden relative">
@@ -60,17 +70,15 @@ const Blogs: React.FC = () => {
                                 </span>
                             ))}
                         </div>
+                        
+                        <div className="mt-4 flex items-center gap-2 text-accent text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-300">
+                            Read Article <ArrowRight size={14} />
+                        </div>
                     </div>
                 </div>
-              </a>
+              </div>
             </AnimatedSection>
           ))}
-        </div>
-        
-        <div className="mt-8 text-center md:hidden">
-             <a href="#" className="inline-flex items-center gap-2 text-accent font-medium hover:text-white transition-colors">
-                View all posts <ArrowRight size={16} />
-            </a>
         </div>
       </div>
     </section>
