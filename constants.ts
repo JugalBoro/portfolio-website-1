@@ -1,10 +1,9 @@
 import { ExperienceItem, Project, SkillCategory, BlogPost } from './types';
 
 // Images
-// Profile ID: 1rbsPQolnWvZcB20K9tr1esVbMbp_g4gB
-// Logo ID: 1PBOWUyd7rhBkExIalyJCkEhiBwbmVIE6
-export const PROFILE_IMAGE = 'https://drive.google.com/uc?export=view&id=1rbsPQolnWvZcB20K9tr1esVbMbp_g4gB';
-export const COMPANY_LOGO = 'https://drive.google.com/uc?export=view&id=1PBOWUyd7rhBkExIalyJCkEhiBwbmVIE6';
+// Using lh3.googleusercontent.com for more reliable direct image rendering
+export const PROFILE_IMAGE = 'https://lh3.googleusercontent.com/d/1rbsPQolnWvZcB20K9tr1esVbMbp_g4gB';
+export const COMPANY_LOGO = 'https://lh3.googleusercontent.com/d/1PBOWUyd7rhBkExIalyJCkEhiBwbmVIE6';
 // Generic agriculture icon for Sn Silos
 export const AGRI_ICON = 'https://cdn-icons-png.flaticon.com/512/606/606063.png';
 
@@ -108,7 +107,7 @@ export const BLOGS: BlogPost[] = [
     date: "Feb 15, 2024",
     readTime: "5 min read",
     tags: ["WebSockets", "Node.js", "Real-time"],
-    image: "https://images.unsplash.com/photo-1558494949-ef526b0042a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
     link: "#"
   },
   {
