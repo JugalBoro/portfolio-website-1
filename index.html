@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jugal Boro | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              primary: '#050505', // Rich Black
+              secondary: '#111111', // Off-Black
+              tertiary: '#1A1A1A', // Dark Gray
+              accent: '#FBBF24', // Amber 400 (Gold-like)
+              accentHover: '#D97706', // Amber 600
+              gold: '#FFD700', // Pure Gold
+              textLight: '#F8FAFC', // Slate 50
+              textDim: '#94A3B8', // Slate 400
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'gold-gradient': 'linear-gradient(to right, #FBBF24, #F59E0B, #D97706)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #F8FAFC;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333333; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FBBF24; 
+      }
+      .gold-text-gradient {
+        background: linear-gradient(to right, #FDE68A, #F59E0B, #D97706);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glass-card {
+        background: rgba(17, 17, 17, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-type-animation": "https://aistudiocdn.com/react-type-animation@^3.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
