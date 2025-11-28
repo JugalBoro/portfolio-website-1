@@ -49,16 +49,33 @@ export const EXPERIENCE: ExperienceItem[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "Factory Manager (Open Source)",
-    description: "Contribution to Industry Fusion. Added Auto Layout feature and Edit Subflow Dialog.",
-    tech: ["React Flow", "Open Source", "UI/UX"],
-    links: [{ label: "PR Link", url: "#" }]
+    title: "MIRRA : AI Powered Virtual Try-On",
+    description: "Implemented advanced virtual try-on functionality by integrating Google Gemini 2.5 (Image + Chat) APIs, generating photorealistic outfit previews. Deployed on Google Cloud with environment-based configuration.",
+    tech: ["React", "Gemini 2.5", "Google Cloud", "Tailwind"],
+    links: [
+      { label: "Video", url: "https://www.loom.com/share/e7a61a92929948bab1d4dcb0e19cad90" },
+      { label: "Website", url: "https://mirra-ai-virtual-fitting-room-96996736092.us-west1.run.app/" },
+      { label: "Github", url: "https://github.com/JugalBoro/Mira-AI-Virtual-Try-on" }
+    ]
+  },
+  {
+    title: "Fusion Studio: AI Multimedia Platform",
+    description: "Built an interactive AI-powered multimedia studio using React, TypeScript, and Vite. Integrated Gemini APIs for intelligent audio generation and resource-optimized playback.",
+    tech: ["React", "TypeScript", "Vite", "Gemini API"],
+    links: [
+      { label: "Video", url: "https://www.loom.com/share/170d8b5c0cc54a0fb05e4dbf716edfb3" },
+      { label: "Website", url: "https://fusion-studio-542825433260.us-west1.run.app/" },
+      { label: "Github", url: "https://github.com/JugalBoro/fusion-studio" }
+    ]
   },
   {
     title: "Group Chat Application",
-    description: "Built a full-stack group messaging app (WhatsApp-style) supporting signup/login, group creation, member management, and real-time messaging.",
+    description: "Built a full-stack group messaging app (WhatsApp-style) supporting signup/login, group creation, member management, and real-time messaging using Socket.io.",
     tech: ["React", "Node.js", "Express", "JWT", "Socket.io"],
-    links: [{ label: "Video Demo", url: "#" }]
+    links: [
+      { label: "Video", url: "#" },
+      { label: "Github", url: "#" }
+    ]
   },
   {
     title: "Restaurant Management App",
@@ -71,6 +88,12 @@ export const PROJECTS: Project[] = [
     description: "Expense tracker app featuring CRUD operations, budgeting, categorized expenses, and responsive UI for visualizing spending patterns.",
     tech: ["MySQL", "Node.js", "Express", "HTML", "CSS"],
     links: [{ label: "Code Repository", url: "#" }]
+  },
+  {
+    title: "Factory Manager (Open Source)",
+    description: "Contribution to Industry Fusion. Added Auto Layout feature and Edit Subflow Dialog to the open source project.",
+    tech: ["React Flow", "Open Source", "UI/UX"],
+    links: [{ label: "PR Link", url: "#" }]
   }
 ];
 
