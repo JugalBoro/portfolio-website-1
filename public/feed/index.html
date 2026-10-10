@@ -1,0 +1,35 @@
+<!-- Keep the portfolio intact while proving that a shared external script can mount the real Kloth experience on this domain. -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Kloth Feed · Modern Portfolio</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f5f4ef;color:#20271e;font-family:system-ui,-apple-system,sans-serif}a{color:inherit}header{display:flex;justify-content:space-between;align-items:center;padding:22px 5vw;border-bottom:1px solid #dddfd4}.wordmark{font-size:25px;font-weight:750;letter-spacing:-1.3px;text-decoration:none}.wordmark span{font-weight:400;color:#68745e;margin-left:12px;letter-spacing:-.5px;font-size:17px}header>a:last-child{font-size:13px;text-underline-offset:4px}main{max-width:1170px;margin:auto;padding:48px 28px;display:grid;grid-template-columns:1fr 430px;gap:64px;align-items:start}.intro{padding-top:46px}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#5b674d}.eyebrow:before{content:'';display:inline-block;background:#768b56;width:7px;height:7px;border-radius:50%;margin-right:9px}h1{font-size:clamp(38px,4.5vw,62px);line-height:1.06;letter-spacing:-2.8px;font-weight:550;margin:24px 0}h1 em{font-family:Georgia,serif;font-weight:400;color:#657349}.description{max-width:390px;font-size:16px;line-height:1.8;color:#60645a}.host{font-size:12px;overflow-wrap:anywhere;margin:30px 0 9px;color:#626954}.host strong{display:block;color:#26331e;margin-top:6px;font-weight:550}.divider{height:1px;background:#dcded4;margin:30px 0}.facts{margin:0;padding:0;list-style:none}.facts li{font-size:13px;padding:10px 0;display:flex;gap:13px;line-height:1.5}.facts span{font-size:11px;color:#6d775b;min-width:20px;padding-top:2px}.note{font-size:12px;line-height:1.75;color:#74776e;margin-top:25px}.switch{display:inline-block;margin-top:20px;font-size:13px;text-underline-offset:5px}.frame-shell{background:#fff;border:1px solid #d5d8ca;border-radius:20px;overflow:hidden;box-shadow:0 15px 55px #28341b0a}.frame-label{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:16px 20px;border-bottom:1px solid #eeeeea}.frame-label span:last-child{color:#657b47}#kloth-feed{height:min(760px,calc(100dvh - 180px));min-height:650px;display:grid;grid-template-rows:minmax(0,1fr) auto}#kloth-feed>p{padding:24px;line-height:1.7;font-size:14px}details{font-size:12px;color:#62695c;margin-top:20px;line-height:1.8}summary{cursor:pointer}code{font-size:11px;overflow-wrap:anywhere}footer{max-width:1114px;margin:0 auto;padding:0 0 26px;font-size:11px;color:#757c6e}@media(max-width:820px){main{grid-template-columns:1fr;gap:25px;padding:25px 18px;max-width:490px}.intro{padding-top:0}h1{font-size:39px;letter-spacing:-1.6px;margin:16px 0}.description{font-size:14px}.facts,.divider{display:none}.host{margin:18px 0 8px}.note{margin:12px 0}.switch{margin-top:5px}.frame-shell{border-radius:14px}#kloth-feed{height:780px;min-height:620px}header{padding:16px 20px}.wordmark span{font-size:13px}footer{padding:0 20px 22px}}
+  </style>
+</head>
+<body>
+  <header><a class="wordmark" href="/">kloth<span>× Jugal</span></a><a href="/">Back to portfolio ↗</a></header>
+  <main>
+    <section class="intro">
+      <div class="eyebrow">Live integration preview · Site B</div>
+      <h1>Your website.<br>A feed that<br>feels <em>personal.</em></h1>
+      <p class="description">The existing Kloth experience, embedded here with one shared script. Start with your twin and explore your style.</p>
+      <div class="host">YOU ARE BROWSING ON<strong>jugal-boro-portfolio.netlify.app</strong></div>
+      <div class="divider"></div>
+      <ol class="facts"><li><span>01</span>This page belongs to the portfolio website.</li><li><span>02</span>The script opens the real Kloth app in a frame.</li><li><span>03</span>Kloth runs its existing onboarding and feed.</li></ol>
+      <p class="note">Embedding proof only. The catalog and shopping actions are still Kloth’s. Brand-specific carts and shared cross-site login are a later integration.</p>
+      <a class="switch" href="https://thirsty-morse-f8b8e2.netlify.app/feed/">See the same integration on Site A →</a>
+      <details><summary>View the integration</summary><p>Both sites load <code>thirsty-morse-f8b8e2.netlify.app/kloth/loader.v1.js</code>. This page uses installation <code>portfolio-modern</code>.</p><p>New visitors follow Kloth’s normal setup. If browser storage or camera access is restricted, use the frame’s new-tab link.</p></details>
+    </section>
+    <section aria-label="Embedded Kloth experience">
+      <div class="frame-shell"><div class="frame-label"><span>Kloth experience</span><span>Live source · kloth.me</span></div><div id="kloth-feed"><p>Loading the Kloth embed…<br><a href="https://kloth.me/make-my-twin" target="_blank" rel="noopener noreferrer">Open Kloth directly</a></p></div></div>
+      <noscript><p>Enable JavaScript to load the embedded experience, or open Kloth directly.</p></noscript>
+    </section>
+  </main>
+  <footer>Kloth integration proof of concept · One shared script, two independent websites.</footer>
+  <script defer src="https://thirsty-morse-f8b8e2.netlify.app/kloth/loader.v1.js" data-kloth-target="kloth-feed" data-kloth-installation="portfolio-modern"></script>
+</body>
+</html>
